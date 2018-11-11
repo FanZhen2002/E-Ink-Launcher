@@ -14,6 +14,7 @@ import android.content.res.ColorStateList;
 import android.os.BatteryManager;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.view.Display;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -267,7 +268,6 @@ public class Launcher extends Activity {
       } else if (bundle.containsKey(DELETEAPP)) {
         launcherView.setDelete(true);
 
-        //显示所有App
         dataCenter.refreshAppList(true);
         findViewById(R.id.deleteFinish).setVisibility(View.VISIBLE);
       } else if (bundle.containsKey(LAUNCHER_FONT_SIZE)) {
@@ -393,10 +393,20 @@ public class Launcher extends Activity {
     }
   }
 
+  public void yotaMirror() {
+    Display display = getWindowManager().getDefaultDisplay();
+    boolean isEpd =  com.yotadevices.sdk.Epd.isEpdDisplay(display);
+
+    com.yotadevices.sdk.EpdManager.getInstance().startMirroring();
+  //  com.yotadevices.sdk.EpdManager.getInstance().stopMirroring();
+
+  }
+
+
   private void activeManage() {
     Intent intent = new Intent(DevicePolicyManager.ACTION_ADD_DEVICE_ADMIN);
     intent.putExtra(DevicePolicyManager.EXTRA_DEVICE_ADMIN, new ComponentName(this, AdminReceiver.class));
-    intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "E-Ink Launcher 获取锁屏权限");
+    intent.putExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION, "E-Ink Launcher take lock screen permission");
     startActivityForResult(intent, 10001);
   }
 

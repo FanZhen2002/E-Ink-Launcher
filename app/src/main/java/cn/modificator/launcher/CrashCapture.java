@@ -29,16 +29,16 @@ import java.util.Map;
 
 public class CrashCapture implements Thread.UncaughtExceptionHandler {
   private static final String TAG = "CrashHandler";
-  private Thread.UncaughtExceptionHandler mDefaultHandler;// 系统默认的UncaughtException处理类
-  private static CrashCapture INSTANCE = new CrashCapture();// CrashHandler实例
-  private Context mContext;// 程序的Context对象
-  private Map<String, String> info = new HashMap<String, String>();// 用来存储设备信息和异常信息
+  private Thread.UncaughtExceptionHandler mDefaultHandler;
+  private static CrashCapture INSTANCE = new CrashCapture();
+  private Context mContext;
+  private Map<String, String> info = new HashMap<String, String>();
   private SimpleDateFormat format = new SimpleDateFormat(
-      "yyyy-MM-dd-HH-mm-ss");// 用于格式化日期,作为日志文件名的一部分
-  //重启APP时间
+      "yyyy-MM-dd-HH-mm-ss");
+
   private long mRestartTime;
 
-  // 重启后跳转的Activity
+
   private Class mRestartActivity;
 
   boolean isBackground = false;
@@ -66,10 +66,10 @@ public class CrashCapture implements Thread.UncaughtExceptionHandler {
    */
   public void init(Context context, long restartTime, Class restartActivity) {
     mContext = context;
-    mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();// 获取系统默认的UncaughtException处理器
+    mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
     mRestartTime = restartTime;
     mRestartActivity = restartActivity;
-    Thread.setDefaultUncaughtExceptionHandler(this);// 设置该CrashHandler为程序的默认处理器
+    Thread.setDefaultUncaughtExceptionHandler(this);
   }
 
   /**
@@ -79,11 +79,11 @@ public class CrashCapture implements Thread.UncaughtExceptionHandler {
   public void uncaughtException(Thread thread, Throwable ex) {
     ex.printStackTrace();
     if (!handleException(ex) && mDefaultHandler != null) {
-      // 如果自定义的没有处理则让系统默认的异常处理器来处理
+
       mDefaultHandler.uncaughtException(thread, ex);
     } else {
       try {
-        Thread.sleep(2000);// 如果处理了，让程序继续运行2秒再退出，保证文件保存并上传到服务器
+        Thread.sleep(2000);
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
@@ -136,7 +136,7 @@ public class CrashCapture implements Thread.UncaughtExceptionHandler {
    */
   public void collectDeviceInfo(Context context) {
     try {
-      PackageManager pm = context.getPackageManager();// 获得包管理器
+      PackageManager pm = context.getPackageManager();
       PackageInfo pi = pm.getPackageInfo(context.getPackageName(),
           PackageManager.GET_ACTIVITIES);// 得到该应用的信息，即主Activity
       if (pi != null) {

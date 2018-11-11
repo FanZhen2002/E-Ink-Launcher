@@ -1,0 +1,72 @@
+<resources>
+    <string name="app_name">E-Ink 런처</string>
+    <string name="file_manager">파일관리자</string>
+
+    <string name="empty_directory_hint">빈 디렉토리</string>
+    <string name="start_path_name" translatable="false">장치</string>
+    <string name="type_archive">Archive</string>
+    <string name="type_certificate">Certificate</string>
+    <string name="type_directory">디렉토리</string>
+    <string name="type_document">파일</string>
+    <string name="type_drawing">그림</string>
+    <string name="type_excel">엑셀</string>
+    <string name="type_image">이미지</string>
+    <string name="type_music">음악</string>
+    <string name="type_video">동영상</string>
+    <string name="type_pdf">PDF</string>
+    <string name="type_power_point">파워포인트</string>
+    <string name="type_word">문서</string>
+    <string name="type_apk">APK</string>
+
+    <string name="setting_cloud_manager_on">클라우드관리자:ON</string>
+    <string name="setting_cloud_manager_off">클라우드관리자:OFF</string>
+    <string name="setting_cloud_manager_wifi_off">클라우드관리자\n -- No WIFI</string>
+    <string name="battery_status_low_battery">배터리부족</string>
+    <string name="setting_show_divider">선 보이기</string>
+    <string name="setting_hide_divider">선 감추기</string>
+    <string name="setting_set_font_size">글꼴크기</string>
+    <string name="setting_apps_manager">앱 매니져</string>
+    <string name="setting_column_icons">행</string>
+    <string name="setting_row_icons">열</string>
+    <string name="toast_need_wifi_connnect">WiFi접속필요</string>
+    <string name="app_manager_finish">완료</string>
+    <string name="battery_heat">배터리과열</string>
+    <string name="battery_unknown">알수없음</string>
+    <string name="battery_charging">충전</string>
+    <string name="battery_low">배터리부족</string>
+    <string name="battery_full">완충</string>
+    <string name="battery_wtf">WTF</string>
+
+    <string name="dialog_cancel">취소</string>
+    <string name="dialog_hide">숨김</string>
+    <string name="dialog_uninstall">제거</string>
+    <string name="dialog_pkg_name">패키지: %s</string>
+    <string name="dialog_close">닫기</string>
+
+    <string name="wifi_status_off">꺼짐</string>
+    <string name="wifi_status_closing">종료중</string>
+    <string name="wifi_status_opening">시작중</string>
+    <string name="wifi_status_on">켜짐</string>
+    <string name="wifi_status_connected">연결됨:%s</string>
+    <string name="wifi_status_connecting">연결중</string>
+    <string name="wifi_status_disconnected">끊어짐</string>
+    <string name="wifi_status_disconnecting">끊는중</string>
+
+    <string name="item_lockscreen">잠금화면</string>
+	<string name="item_mirror">요타미러</string>
+
+    <string-array name="power_menu">
+        <item>전원 종료</item>
+        <item>재시작</item>
+    </string-array>
+    <string name="power_title">전원을 제어할 수 있습니다</string>
+    <string name="oh_no">오류</string>
+    <string name="come_on">기부</string>
+    <string name="setting_help_and_about">도움말</string>
+    <string name="path">경로</string>
+    <string name="default_path_setting">기본경로</string>
+    <string name="dialog_confim">확인</string>
+    <string name="parent_folder">상위 디렉토리</string>
+    <string name="exit">나가기</string>
+    <string name="delete">삭제</string>
+</resources>

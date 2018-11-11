@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.yotadevices.libs.internal</groupId>
+  <artifactId>messagemonitor</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0.0-SNAPSHOT</version>
+      <version>1.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20161213150226</lastUpdated>
+  </versioning>
+</metadata>

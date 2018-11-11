@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.yotadevices.libs.internal</groupId>
+  <artifactId>weatherlib</artifactId>
+  <version>1.1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20180926.105122</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20180926105122</lastUpdated>
+  </versioning>
+</metadata>

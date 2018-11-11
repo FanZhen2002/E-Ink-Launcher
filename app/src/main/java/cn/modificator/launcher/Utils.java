@@ -98,7 +98,7 @@ public class Utils {
   }
 
   private static final String[] sAmPmCN = new String[]{
-      "凌晨", "黎明", "早晨", "上午", "中午", "下午", "晚上", "深夜"
+      "凌晨", "dawn", "morning", "morning", "noon", "afternoon", "evening", "late night"
   };
 
 }

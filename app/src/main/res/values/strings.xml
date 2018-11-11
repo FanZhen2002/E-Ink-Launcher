@@ -35,7 +35,7 @@
     <string name="battery_charging">Charging</string>
     <string name="battery_low">Low Battery</string>
     <string name="battery_full">Full</string>
-    <string name="battery_wtf" translatable="false">WTF?</string>
+    <string name="battery_wtf">WTF</string>
 
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_hide">Hide</string>
@@ -53,14 +53,16 @@
     <string name="wifi_status_disconnecting">WiFi disconnecting</string>
 
     <string name="item_lockscreen">Lock Screen</string>
+    <string name="item_mirror">Yota Mirror</string>
 
+	
     <string-array name="power_menu">
         <item>Power off</item>
         <item>Reboot</item>
     </string-array>
-    <string name="power_title" translatable="false">现在可以操作电源了哦~</string>
-    <string name="oh_no">混淆有毛用啊，文件这么少,代码渣貌似也能增加难度,不想加固，加固有问题，大哥我这就署名有价值，反编译别把我名字去了- -</string>
-    <string name="come_on">给点赏钱吧，支付鸨就行，账号是邮箱</string>
+    <string name="power_title">power title</string>
+    <string name="oh_no">do not modify -</string>
+    <string name="come_on">Donation</string>
     <string name="setting_help_and_about">Help &amp; About</string>
     <string name="path">Path</string>
     <string name="default_path_setting">Default Path</string>

@@ -137,6 +137,9 @@ public class EInkLauncherView extends ViewGroup {
         view.measure(makeMeasureSpec(getItemWidth(), EXACTLY),
             makeMeasureSpec(getItemHeight(), EXACTLY));
         view.layout(childLeft, childTop, childRight, childBottom);
+
+        int current_position = COL_NUM * i + j;
+
         if (COL_NUM * i + j >= dataList.size()) {
           if (COL_NUM * i + j == dataList.size()) {
             mWifiControlView.measure(makeMeasureSpec(getItemWidth(), EXACTLY),
@@ -172,7 +175,7 @@ public class EInkLauncherView extends ViewGroup {
                           getContext().startActivity(intent);
                         } else {
 //                                                    Intent intent = new Intent("android.intent.action.REBOOT");
-//                                                    intent.putExtra("android.intent.extra.KEY_CONFIRM", false);//true 确认是否关机
+//                                                    intent.putExtra("android.intent.extra.KEY_CONFIRM", false);//true
 //                                                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 //                                                    getContext().startActivity(intent);
                                                     /*intenet.putExtra("nowait",1);
@@ -180,16 +183,17 @@ public class EInkLauncherView extends ViewGroup {
                                                     intenet.putExtra("window",0);
                                                     getContext().sendBroadcast(intenet);*/
                           PowerManager pManager = (PowerManager) getContext().getSystemService(Context.POWER_SERVICE);
-                          pManager.reboot("重启");
+                          pManager.reboot("Restart");
                         }
                       }
                     })
-                    .setPositiveButton("取消", null)
+                    .setPositiveButton("Cancel", null)
                     .show();
                 return true;
               }
             });
           }
+
           if (COL_NUM * i + j < dataList.size() + 2) {
             if (hideDivider) {
               view.setBackgroundResource(R.drawable.app_item_final);
@@ -213,6 +217,7 @@ public class EInkLauncherView extends ViewGroup {
           view.setBackgroundResource(R.drawable.app_item_bottom);
         else
           view.setBackgroundResource(R.drawable.app_item_normal);
+
         if (COL_NUM * i + j < dataList.size()) {
           if (iconReplacePkg.contains(dataList.get(COL_NUM * i + j).activityInfo.packageName)) {
             ((ImageView) view.findViewById(R.id.appImage)).setImageURI(Uri.fromFile(iconReplaceFile.get(iconReplacePkg.indexOf(dataList.get(COL_NUM * i + j).activityInfo.packageName))));

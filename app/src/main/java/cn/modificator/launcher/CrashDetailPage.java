@@ -89,7 +89,6 @@ public class CrashDetailPage extends Activity {
     tvContent.append("telegram : https://t.me/EInkLauncher\n");
     tvContent.append("github issues : https://github.com/Modificator/E-Ink-Launcher\n");
     tvContent.append("well it's already open source\n");
-    tvContent.append("当然也可以在酷安应用页反馈\n");
     tvContent.append("Thanks.");
     tvContent.append("\nーーーーーーーーーーーーーーーーーーーー\n");
 

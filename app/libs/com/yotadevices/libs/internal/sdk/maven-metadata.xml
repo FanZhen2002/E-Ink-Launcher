@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.yotadevices.libs.internal</groupId>
+  <artifactId>sdk</artifactId>
+  <versioning>
+    <release>3.7.14</release>
+    <versions>
+      <version>2.5.0</version>
+      <version>3.6.0</version>
+      <version>3.6.1</version>
+      <version>3.6.2</version>
+      <version>3.7.0</version>
+      <version>3.7.1</version>
+      <version>3.7.2-SNAPSHOT</version>
+      <version>3.7.2-SNAPSHOT-1</version>
+      <version>3.7.2-SNAPSHOT-3</version>
+      <version>3.7.2</version>
+      <version>3.7.3</version>
+      <version>3.7.3-SNAPSHOT</version>
+      <version>3.7.3-SNAPSHOT-1</version>
+      <version>3.7.3-SNAPSHOT-2</version>
+      <version>3.7.4</version>
+      <version>3.7.5</version>
+      <version>3.7.6</version>
+      <version>3.7.7-SNAPSHOT</version>
+      <version>3.7.7-SNAPSHOT-2</version>
+      <version>3.7.7</version>
+      <version>3.7.5-SNAPSHORT</version>
+      <version>3.7.8</version>
+      <version>3.7.9</version>
+      <version>3.7.10</version>
+      <version>3.7.11-SNAPSHOT</version>
+      <version>3.7.11-SNAPSHOT2</version>
+      <version>3.7.11-SNAPSHOT3</version>
+      <version>3.7.11-SNAPSHOT4</version>
+      <version>3.7.11</version>
+      <version>3.7.12</version>
+      <version>3.7.13-SNAPSHOT</version>
+      <version>3.7.13</version>
+      <version>3.8.14</version>
+      <version>3.7.14</version>
+      <version>3.8.16-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20181102173249</lastUpdated>
+  </versioning>
+</metadata>

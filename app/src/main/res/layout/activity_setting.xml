@@ -399,7 +399,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="5dp"
             android:gravity="left|center_vertical"
-            android:text="隐藏分割线"
+            android:text="hidden line"
             android:textSize="16dp" />
 
 
@@ -440,8 +440,8 @@
             android:gravity="center_vertical"
             android:paddingLeft="20dp"
             android:text="@string/setting_apps_manager"
-            tools:text="管理应用"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:text="ManageApp" />
 
         <View
             android:layout_width="match_parent"
@@ -496,9 +496,9 @@
                 android:id="@+id/ftp_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="网络传书 （开）"
                 android:text="@string/setting_cloud_manager_wifi_off"
-                android:textSize="16dp" />
+                android:textSize="16dp"
+                tools:text="internet book(open)" />
 
             <TextView
                 android:id="@+id/ftp_addr"

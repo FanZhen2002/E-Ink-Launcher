@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.yotadevices.libs.public</groupId>
+  <artifactId>sdk</artifactId>
+  <versioning>
+    <release>3.7.12</release>
+    <versions>
+      <version>3.7.11</version>
+      <version>3.7.12</version>
+    </versions>
+    <lastUpdated>20161228114546</lastUpdated>
+  </versioning>
+</metadata>

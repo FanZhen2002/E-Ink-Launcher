@@ -66,7 +66,7 @@
                     android:id="@+id/batteryStatus"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="充电中"
+                    android:text="@string/battery_charging"
                     android:textColor="#000000"
                     android:textSize="9sp" />
             </LinearLayout>
