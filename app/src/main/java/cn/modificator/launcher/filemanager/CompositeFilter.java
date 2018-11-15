@@ -12,20 +12,20 @@ import java.util.ArrayList;
  */
 public class CompositeFilter implements FileFilter, Serializable {
 
-  private ArrayList<FileFilter> mFilters;
+    private ArrayList<FileFilter> mFilters;
 
-  public CompositeFilter(ArrayList<FileFilter> filters) {
-    mFilters = filters;
-  }
-
-  @Override
-  public boolean accept(File f) {
-    for (FileFilter filter : mFilters) {
-      if (!filter.accept(f)) {
-        return false;
-      }
+    public CompositeFilter(ArrayList<FileFilter> filters) {
+        mFilters = filters;
     }
 
-    return true;
-  }
+    @Override
+    public boolean accept(File f) {
+        for (FileFilter filter : mFilters) {
+            if (!filter.accept(f)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
