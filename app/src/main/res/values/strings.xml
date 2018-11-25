@@ -54,7 +54,7 @@
 
     <string name="item_lockscreen">Lock Screen</string>
     <string name="item_mirror">Yota Mirror</string>
-
+    <string name="item_mobest">Yota Mobest</string>
 	
     <string-array name="power_menu">
         <item>Power off</item>

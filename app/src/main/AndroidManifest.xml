@@ -35,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
                 <!--category android:name="android.intent.category.HOME" /-->
                 <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.yotadevices.intent.category.EPD_HOME"/>
             </intent-filter>
         </activity>
         <activity

@@ -478,13 +478,20 @@ public class Launcher extends Activity
 	public void yotaMirror()
 	{
 		Display display = getWindowManager().getDefaultDisplay();
-		boolean isEpd = com.yotadevices.sdk.Epd.isEpdDisplay(display);
-
+		com.yotadevices.sdk.EpdManager.getInstance().stopMirroring();
 		com.yotadevices.sdk.EpdManager.getInstance().startMirroring();
-		//  com.yotadevices.sdk.EpdManager.getInstance().stopMirroring();
-
 	}
 
+	public void mobestLauncher()
+	{
+		Display display = getWindowManager().getDefaultDisplay();
+
+		//com.yotadevices.sdk.EpdManager.getInstance().startMirroring();
+		//  com.yotadevices.sdk.EpdManager.getInstance().stopMirroring();
+		//calling an activity using <intent-filter> action name
+		Intent inent = new Intent("com.android.jv.ink.launcherink.ui.home.JvMainActivity");
+		startActivity(inent);
+	}
 
 	private void activeManage()
 	{

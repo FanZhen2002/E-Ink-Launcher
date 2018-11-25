@@ -164,7 +164,7 @@ public class EInkLauncherView extends ViewGroup
 
 				if (curr_pos == 0)
 				{
-					((ImageView) view.findViewById(R.id.appImage)).setImageResource(R.drawable.ic_drawing_box);
+					((ImageView) view.findViewById(R.id.appImage)).setImageResource(R.mipmap.ic_mirror);
 					((TextView) view.findViewById(R.id.appName)).setText(R.string.item_mirror);
 					((TextView) view.findViewById(R.id.appName)).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize);
 					observable.addObserver(((ObserverFontTextView) view.findViewById(R.id.appName)));
@@ -180,6 +180,24 @@ public class EInkLauncherView extends ViewGroup
 					addView(view);
 					continue;
 				}
+//				else if (curr_pos == 1)
+//				{
+//					((ImageView) view.findViewById(R.id.appImage)).setImageResource(R.mipmap.ic_home);
+//					((TextView) view.findViewById(R.id.appName)).setText(R.string.item_mirror);
+//					((TextView) view.findViewById(R.id.appName)).setTextSize(TypedValue.COMPLEX_UNIT_SP, fontSize);
+//					observable.addObserver(((ObserverFontTextView) view.findViewById(R.id.appName)));
+//					view.setOnClickListener(new OnClickListener()
+//					{
+//						@Override
+//						public void onClick(View v)
+//						{
+//							((Launcher) v.getContext()).mobestLauncher();
+//						}
+//					});
+//					HideDivider(i, j, view);
+//					addView(view);
+//					continue;
+//				}
 				else if (curr_pos == 1)
 				{
 					mWifiControlView.measure(makeMeasureSpec(getItemWidth(), EXACTLY),
